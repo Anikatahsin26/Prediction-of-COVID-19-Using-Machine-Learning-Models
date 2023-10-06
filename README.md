@@ -4,7 +4,7 @@
 This project focuses on utilizing machine learning for predicting COVID-19 diagnoses using a dataset from Hospital Israelita Albert Einstein, São Paulo, Brazil. The experiments involved Cross-Validation and Holdout methods, evaluating five models. XGBoost and Random Forest demonstrated superior performance with 91% accuracy, emphasizing the significance of features like Basophils and Patient Age Quantile. The discussion delves into model strengths and limitations, offering valuable insights for ongoing research in enhancing COVID-19 diagnosis through machine learning.
 
 ## Dataset Description
-The dataset for this report, sourced from Kaggle (Einsteindata4u, 2023), originates from patients receiving medical care at the Hospital Israelita Albert Einstein in São Paulo, Brazil. The dataset consists of confidential samples collected through RT-PCR tests for SARS-CoV-2 and other laboratory tests, with 5,644 rows and 111 columns. 
+The dataset for this report, sourced from Kaggle: https://www.kaggle.com/datasets/einsteindata4u/covid19 , originates from patients receiving medical care at the Hospital Israelita Albert Einstein in São Paulo, Brazil. The dataset consists of confidential samples collected through RT-PCR tests for SARS-CoV-2 and other laboratory tests, with 5,644 rows and 111 columns. 
 
 ## Data Pre-processing
 ### Dropping Unnecessary Columns
