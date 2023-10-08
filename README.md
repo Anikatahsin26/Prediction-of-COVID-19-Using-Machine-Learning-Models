@@ -8,7 +8,7 @@ The dataset for this report, sourced from Kaggle: https://www.kaggle.com/dataset
 
 ## Data Pre-processing
 ### Dropping Unnecessary Columns
-Certain columns (column1, column2, column3) were deemed unnecessary for analysis and were dropped from the dataset.
+The columns , 'Patient admitted to regular ward (1=yes, 0=no)', 'Patient admitted to semi-intensive unit (1=yes, 0=no)', 'Patient admitted to intensive care unit (1=yes, 0=no)' would not add anything to our analysis. So, we will drop these columns from the dataset
 
 ### Handling Missing Values
 Approximately 50% of the columns had over 90% missing values. These columns were removed, resulting in a new dataset of 5,644 rows and 35 columns 
@@ -18,10 +18,10 @@ Approximately 50% of the columns had over 90% missing values. These columns were
 The data was filtered to include positive SARS-CoV-2 exam results and non-null values in the 'Hematocrit' or 'Urine - Density' columns. This resulted in a focused dataset of 1,091 rows and 35 columns.
 
 ### Encoding Categorical Features
-One-third of the variables in the dataset were categorical. LabelEncoder was used to convert them into numerical values for consistency.
+In this dataset, one third 33.3% of the variables are categorical (data type: object). We will use LabelEncoder to convert them into numerical values, such as encoding 'SARS-Cov-2 exam result' column as 1 for positive and 0 for negative. Once the categorical variables are encoded, all data types will be converted to integer for consistency.
 
 ### Data Balance
-After preprocessing, the dataset contains 1,091 rows and 35 columns with a balanced distribution.
+After the four above steps, the dataset has 1091 rows and 35 columns. By analysing the class distribution, we can see a well-balanced dataset with a 51.1% positive case and a 48.9% negative case. This optimal state of the dataset allows for machine learning model analysis.
 
 ## Machine Learning Models
 The report evaluates five classifiers: XGBoost, Random Forest (RF), Decision Tree (DT), Logistic Regression (LR), and K-Nearest Neighbors (KNN).
