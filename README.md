@@ -8,6 +8,7 @@ The dataset for this report, sourced from Kaggle: https://www.kaggle.com/dataset
 
 ![Dataset Description](Dataset_Description.png)
 
+
 ## Data Pre-processing
 ### Dropping Unnecessary Columns
 The columns , 'Patient admitted to regular ward (1=yes, 0=no)', 'Patient admitted to semi-intensive unit (1=yes, 0=no)', 'Patient admitted to intensive care unit (1=yes, 0=no)' would not add anything to our analysis. So, we will drop these columns from the dataset
