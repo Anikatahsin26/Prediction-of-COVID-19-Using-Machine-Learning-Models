@@ -6,6 +6,8 @@ This project focuses on utilizing machine learning for predicting COVID-19 diagn
 ## Dataset Description
 The dataset for this report, sourced from Kaggle: https://www.kaggle.com/datasets/einsteindata4u/covid19 , originates from patients receiving medical care at the Hospital Israelita Albert Einstein in São Paulo, Brazil. The dataset consists of confidential samples collected through RT-PCR tests for SARS-CoV-2 and other laboratory tests, with 5,644 rows and 111 columns. 
 
+![Dataset Description](Dataset%20Description.png)
+
 ## Data Pre-processing
 ### Dropping Unnecessary Columns
 The columns , 'Patient admitted to regular ward (1=yes, 0=no)', 'Patient admitted to semi-intensive unit (1=yes, 0=no)', 'Patient admitted to intensive care unit (1=yes, 0=no)' would not add anything to our analysis. So, we will drop these columns from the dataset
