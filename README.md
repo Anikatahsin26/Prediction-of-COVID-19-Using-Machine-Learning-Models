@@ -26,7 +26,7 @@ In this dataset, one third 33.3% of the variables are categorical (data type: ob
 ### Data Balance
 After the four above steps, the dataset has 1091 rows and 35 columns. By analysing the class distribution, we can see a well-balanced dataset with a 51.1% positive case and a 48.9% negative case. This optimal state of the dataset allows for machine learning model analysis.
 
-![Data Balance](Images/Balance.png)
+![Data Balance](Images/DataBalance.png)
 
 ## Machine Learning Models
 The report evaluates five classifiers: XGBoost, Random Forest (RF), Decision Tree (DT), Logistic Regression (LR), and K-Nearest Neighbors (KNN).
