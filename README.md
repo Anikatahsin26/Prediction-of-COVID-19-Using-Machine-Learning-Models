@@ -26,6 +26,8 @@ In this dataset, one third 33.3% of the variables are categorical (data type: ob
 ### Data Balance
 After the four above steps, the dataset has 1091 rows and 35 columns. By analysing the class distribution, we can see a well-balanced dataset with a 51.1% positive case and a 48.9% negative case. This optimal state of the dataset allows for machine learning model analysis.
 
+![Data Balance](Images/Balance.png)
+
 ## Machine Learning Models
 The report evaluates five classifiers: XGBoost, Random Forest (RF), Decision Tree (DT), Logistic Regression (LR), and K-Nearest Neighbors (KNN).
 
@@ -36,13 +38,19 @@ In Experiment-1, we employed the Cross-Validation (CV) method, a machine learnin
 ### Hyperparameters Optimization
 To determine the best combination of hyperparameters for the ML models (XGBoost, Random Forest, Decision Tree, Logistic Regression, K-Nearest Neighbors), a grid search technique with cross-validation was utilized. Optimal hyperparameters were identified, and the models were trained using these parameters.
 
+![Hyperparameters](Images/Hyperparameter.png)
+
 ### Result Evaluation
 Performance outcomes were obtained for different CV fold values, and the classifiers were compared based on metrics such as F1-score, testing accuracy, precision, and recall. The results reveal the highest performing classifiers based on F1-score, testing accuracy, precision, and recall are XGBoost and RF, both achieving 91% accuracy. XGBoost had a recall of 93%, while Random Forest had a recall of 95%, indicating an even higher ability to correctly identify true positives. LR, DT, and KNN have slightly lower scores, with these metrices ranging between 86% and 89%. The confusion matrices showed that RF and XGBoost have only 98 and 97 misclassifications out of 1091 cases, respectively, making them the top recommended classifiers for this task.
 
+![Result](Images/Result1.png)
 
 # Experiment-2
 ### Holdout Method with Result Evaluation
 In the holdout method, 20% of the data is used for testing and 80% for training. The results indicate that RF had the highest accuracy and F1-score at 92%, while XGBoost had closer accuracy and F1-score at 91% and 90%. Both RF and XGBoost had the highest AUC at 96%, with LR also performing well with an AUC of 94%. On the other hand, DT and KNN performed the least well, having 89% of accuracy. The confusion matrix also reveals that out of 219 cases, RF model correctly predicted 97 positive cases and 104 negative cases, with only 18 incorrect predictions, which is the lowest compared to the other models. 
+
+
+![Result](Images/Result2.png)
 
 ### Important Features using SHAP Values
 The SHapley Additive exPlanations (SHAP) value is utilized to identify the most informative predictors that significantly contribute to the decision-making process. By calculating the Shapley value of each feature, the SHAP value provides an explanation of a classifier's prediction, revealing the contribution of each feature to the outcome. We found out the top 10 most important features. Among these, Basophils, Monocytes, Leukocytes, and Lymphocytes - which are types of white blood cells. Additionally, patient age quantile is also found to be a highly important feature in the prediction.
